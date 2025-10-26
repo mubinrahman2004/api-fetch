@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import BlogCard from "../components/home/BlogCard";
 import { blogservices } from "../services/api";
 import Loading from "../components/loading";
+import Button from "../components/ui/Button";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -20,6 +21,12 @@ const Home = () => {
     <>
       <div className="container">
         <h2 className="text-center text-4xl my-10 ">Blog List</h2>
+<div className="flex gap-3">
+<Button variant="primary" size="md">Letest</Button>
+<Button variant="outline" size="md">Popular</Button>
+<Button variant="text" size="md">Categories</Button>
+
+</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {loading
             ? Array.from({ length: 8 }).map((_, index) => (

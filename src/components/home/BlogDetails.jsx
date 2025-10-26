@@ -39,7 +39,7 @@ const BlogDetails = () => {
 
       <div className="flex items-center text-sm text-gray-500 mb-8">
         <span>
-          By <strong className="text-gray-700">Shimanto Sarkar</strong>
+          By <strong className="text-gray-700">mubin</strong>
         </span>
         <span className="mx-2">•</span>
         <span>October 23, 2025</span>
